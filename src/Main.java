@@ -1,3 +1,6 @@
+import psc.Aula2.Pessoa;
+
+import javax.swing.*;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -5,7 +8,57 @@ import static psc.Aula1.*;
 
 public class Main {
     public static void main(String[] args) {
-        psc1();
+        psc2();
+    }
+
+    private static void psc2() {
+        String menu = "1-Cadastrar \n2-Atualizar \n3-Apagar \n4-Listar \n0-Sair";
+        int op;
+
+        do {
+            op = Integer.parseInt(JOptionPane.showInputDialog(menu));
+            String nome, fone, email;
+            Pessoa p;
+            int id;
+            switch (op) {
+                case 1:
+                    nome = JOptionPane.showInputDialog("Nome:");
+                    fone = JOptionPane.showInputDialog("Fone: ");
+                    email = JOptionPane.showInputDialog("Email: ");
+                    p = new Pessoa();
+                    p.setNome(nome);
+                    p.setFone(fone);
+                    p.setEmail(email);
+                    p.put();
+                    break;
+                case 2:
+                    nome = JOptionPane.showInputDialog("Nome:");
+                    fone = JOptionPane.showInputDialog("Fone: ");
+                    email = JOptionPane.showInputDialog("Email: ");
+                    id = Integer.parseInt(JOptionPane.showInputDialog("ID: "));
+                    p = new Pessoa();
+                    p.setNome(nome);
+                    p.setFone(fone);
+                    p.setEmail(email);
+                    p.setId(id);
+                    p.update();
+                    break;
+                case 3:
+                    id = Integer.parseInt(JOptionPane.showInputDialog("ID: "));
+                    p = new Pessoa();
+                    p.setId(id);
+                    p.delete();
+                    break;
+                case 4:
+                    p = new Pessoa();
+                    p.list();
+                    break;
+                case 0:
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Opção inválida.");
+            }
+        } while (op != 0);
     }
 
     private static void psc1() {
