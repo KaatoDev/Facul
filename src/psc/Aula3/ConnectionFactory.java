@@ -1,4 +1,4 @@
-package psc.Aula2;
+package psc.Aula3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

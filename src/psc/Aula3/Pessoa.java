@@ -1,4 +1,4 @@
-package psc.Aula2;
+package psc.Aula3;
 
 import javax.swing.*;
 import java.sql.Connection;

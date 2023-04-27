@@ -1,4 +1,4 @@
-import psc.Aula2.Pessoa;
+import psc.Aula3.Pessoa;
 
 import javax.swing.*;
 import java.util.Scanner;
