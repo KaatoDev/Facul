@@ -7,7 +7,7 @@ public class ConnectionFactory {
 
     public Connection getConnection(){
         final String usuario = "root",
-                senha = "anima123",
+                senha = "1234",
                 host = "localhost",
                 porta= "3306",
                 db = "db_pessoas";
@@ -17,9 +17,8 @@ public class ConnectionFactory {
                     "jdbc:mysql://" + host + ":" + porta + "/" + db, usuario, senha
             );
             if (c == null)
-                System.out.println("1");
-            else System.out.println("2");
-            System.out.println("aaaaaaaaaa");
+                System.out.println("Nao foi possivel conectar a database " + db);
+            else System.out.println("Conectado a database " + db + " com sucesso!");
             return c;
         } catch (Exception e) {
             e.printStackTrace();

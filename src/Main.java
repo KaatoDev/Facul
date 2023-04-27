@@ -46,8 +46,10 @@ public class Main {
                 case 3:
                     id = Integer.parseInt(JOptionPane.showInputDialog("ID: "));
                     p = new Pessoa();
-                    p.setId(id);
-                    p.delete();
+                    if (p.contem(id)) {
+                        p.setId(id);
+                        p.delete();
+                    } else JOptionPane.showMessageDialog(null, "Este id nao existe.");
                     break;
                 case 4:
                     p = new Pessoa();
