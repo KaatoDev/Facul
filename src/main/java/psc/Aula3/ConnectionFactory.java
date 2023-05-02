@@ -7,7 +7,7 @@ public class ConnectionFactory {
 
     public Connection getConnection(){
         final String usuario = "root",
-                senha = "1234",
+                senha = "anima123",
                 host = "localhost",
                 porta= "3306",
                 db = "db_pessoas";
