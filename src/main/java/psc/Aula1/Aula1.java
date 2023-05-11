@@ -1,4 +1,4 @@
-package psc;
+package psc.Aula1;
 
 import java.time.LocalDateTime;
 import java.util.Scanner;

@@ -4,11 +4,21 @@ import javax.swing.*;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-import static psc.Aula1.*;
+import static psc.Aula1.Aula1.*;
 
 public class Main {
     public static void main(String[] args) {
-        psc2();
+        psc3();
+    }
+
+    private static void psc3() {
+        Scanner sc = new Scanner(System.in);
+
+
+
+
+
+        sc.close();
     }
 
     private static void psc2() {
@@ -62,7 +72,6 @@ public class Main {
             }
         } while (op != 0);
     }
-
     private static void psc1() {
         final Pattern p1 = Pattern.compile("[a-l]");
         Scanner sc = new Scanner(System.in);
