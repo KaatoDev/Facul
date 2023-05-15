@@ -8,17 +8,7 @@ import static psc.Aula1.Aula1.*;
 
 public class Main {
     public static void main(String[] args) {
-        psc3();
-    }
-
-    private static void psc3() {
-        Scanner sc = new Scanner(System.in);
-
-
-
-
-
-        sc.close();
+        psc2();
     }
 
     private static void psc2() {
